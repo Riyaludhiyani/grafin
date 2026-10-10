@@ -1,0 +1,1345 @@
+# Autonomous Financial Event Market Impact Graph
+# Curated Indian Financial Knowledge Graph
+# Version: 1.0.0
+# Description: Curated Indian financial transmission graph covering macro indicators, sectors, indices, and equities.
+
+metadata:
+  name: "Indian Financial Market Impact Knowledge Graph"
+  version: "1.0.0"
+  geography: "India"
+  description: "Curated transmission relationships linking Indian macro factors, key sectors, benchmark indices, and large-cap equities."
+  updated_at: "2026-10-11T00:00:00Z"
+
+nodes:
+  # ---------------- MACRO INDICATORS & COMMODITIES ----------------
+  - id: "macro_brent_crude"
+    name: "Brent Crude Oil"
+    type: "commodity"
+    sector: "macro"
+    ticker: "BZ=F"
+    aliases:
+      - "Brent Crude"
+      - "Crude Oil"
+      - "oil prices"
+      - "petroleum"
+      - "brent"
+      - "crude"
+    description: "Global benchmark for sweet light crude oil. India imports over 85% of its crude requirements."
+
+  - id: "currency_usdinr"
+    name: "USD/INR Exchange Rate"
+    type: "currency"
+    sector: "macro"
+    ticker: "INR=X"
+    aliases:
+      - "USD/INR"
+      - "USDINR"
+      - "Indian Rupee"
+      - "Rupee"
+      - "dollar rupee"
+      - "INR"
+    description: "Exchange rate of US Dollar against Indian Rupee. Indicator of currency depreciation and capital flows."
+
+  - id: "macro_india_cpi"
+    name: "India CPI Inflation"
+    type: "macro_indicator"
+    sector: "macro"
+    ticker: null
+    aliases:
+      - "CPI Inflation"
+      - "retail inflation"
+      - "headline CPI"
+      - "consumer price index"
+      - "inflation rate"
+    description: "India Consumer Price Index headline annual inflation targetted by RBI within 2-6% tolerance band."
+
+  - id: "macro_rbi_repo_rate"
+    name: "RBI Repo Rate"
+    type: "macro_indicator"
+    sector: "macro"
+    ticker: null
+    aliases:
+      - "RBI Repo Rate"
+      - "Repo Rate"
+      - "policy rate"
+      - "RBI interest rate"
+      - "benchmark interest rate"
+      - "rate hike"
+      - "rate cut"
+    description: "Benchmark policy rate at which the Reserve Bank of India lends liquidity to commercial banks."
+
+  - id: "macro_india_10y_yield"
+    name: "India 10-Year Benchmark Bond Yield"
+    type: "macro_indicator"
+    sector: "macro"
+    ticker: null
+    aliases:
+      - "10-year G-sec yield"
+      - "Indian bond yield"
+      - "g-sec yield"
+      - "sovereign yield"
+      - "10Y yield"
+    description: "Yield on the benchmark 10-year Government of India sovereign bond."
+
+  # ---------------- MARKET INDICES ----------------
+  - id: "index_nifty_50"
+    name: "Nifty 50 Index"
+    type: "market_index"
+    sector: "market"
+    ticker: "^NSEI"
+    aliases:
+      - "Nifty 50"
+      - "NIFTY"
+      - "Nifty"
+      - "NSE benchmark"
+      - "headline index"
+    description: "National Stock Exchange of India flagship benchmark 50 blue-chip index."
+
+  - id: "index_nifty_bank"
+    name: "Nifty Bank Index"
+    type: "market_index"
+    sector: "banking"
+    ticker: "^NSEBANK"
+    aliases:
+      - "Nifty Bank"
+      - "Bank Nifty"
+      - "Banking index"
+    description: "Index comprising the 12 most liquid and capitalized Indian banking stocks."
+
+  - id: "index_nifty_it"
+    name: "Nifty IT Index"
+    type: "market_index"
+    sector: "it"
+    ticker: "^CNXIT"
+    aliases:
+      - "Nifty IT"
+      - "IT index"
+      - "tech index"
+    description: "Benchmark index tracking major Indian information technology exporters."
+
+  - id: "index_nifty_auto"
+    name: "Nifty Auto Index"
+    type: "market_index"
+    sector: "automobiles"
+    ticker: "^CNXAUTO"
+    aliases:
+      - "Nifty Auto"
+      - "Auto index"
+      - "automobile index"
+    description: "Index tracking Indian automobile and component manufacturing companies."
+
+  - id: "index_nifty_metal"
+    name: "Nifty Metal Index"
+    type: "market_index"
+    sector: "metals"
+    ticker: "^CNXMETAL"
+    aliases:
+      - "Nifty Metal"
+      - "Metal index"
+      - "metals index"
+    description: "Index reflecting performance of Indian steel, aluminum, and mining producers."
+
+  - id: "index_nifty_realty"
+    name: "Nifty Realty Index"
+    type: "market_index"
+    sector: "real_estate"
+    ticker: "^CNXREALTY"
+    aliases:
+      - "Nifty Realty"
+      - "Realty index"
+      - "real estate index"
+    description: "Index tracking listed Indian commercial and residential real estate developers."
+
+  # ---------------- SECTORS ----------------
+  - id: "sector_banking"
+    name: "Indian Banking Sector"
+    type: "sector"
+    sector: "banking"
+    ticker: null
+    aliases:
+      - "Banking sector"
+      - "commercial banks"
+      - "lenders"
+      - "Indian banks"
+    description: "Indian private and public sector commercial banking industry."
+
+  - id: "sector_aviation"
+    name: "Indian Aviation Sector"
+    type: "sector"
+    sector: "aviation"
+    ticker: null
+    aliases:
+      - "Aviation sector"
+      - "airlines"
+      - "Indian airlines"
+      - "air passenger carriers"
+    description: "Commercial passenger airline operators in India."
+
+  - id: "sector_paints"
+    name: "Indian Paints & Coatings Sector"
+    type: "sector"
+    sector: "paints"
+    ticker: null
+    aliases:
+      - "Paints sector"
+      - "decorative paints"
+      - "paint manufacturers"
+    description: "Decorative and industrial coatings manufacturers with high crude feedstock reliance."
+
+  - id: "sector_automobiles"
+    name: "Indian Automobile Sector"
+    type: "sector"
+    sector: "automobiles"
+    ticker: null
+    aliases:
+      - "Automobile sector"
+      - "auto industry"
+      - "OEMs"
+      - "automakers"
+    description: "Passenger vehicle, commercial vehicle, and two-wheeler manufacturers in India."
+
+  - id: "sector_it"
+    name: "Indian Information Technology Sector"
+    type: "sector"
+    sector: "it"
+    ticker: null
+    aliases:
+      - "IT sector"
+      - "software exporters"
+      - "IT services"
+      - "tech exporters"
+    description: "Global IT services and software outsourcing companies generating export revenues."
+
+  - id: "sector_energy"
+    name: "Indian Energy & Oil Refiners Sector"
+    type: "sector"
+    sector: "energy"
+    ticker: null
+    aliases:
+      - "Energy sector"
+      - "oil & gas"
+      - "oil marketing companies"
+      - "upstream oil"
+    description: "Exploration, refining, and retail marketing oil & gas corporations."
+
+  - id: "sector_metals"
+    name: "Indian Metals & Mining Sector"
+    type: "sector"
+    sector: "metals"
+    ticker: null
+    aliases:
+      - "Metals sector"
+      - "steel producers"
+      - "mining & metals"
+    description: "Primary steel, aluminum, and zinc mineral extraction and processing firms."
+
+  - id: "sector_real_estate"
+    name: "Indian Real Estate Sector"
+    type: "sector"
+    sector: "real_estate"
+    ticker: null
+    aliases:
+      - "Real estate sector"
+      - "housing sector"
+      - "property developers"
+      - "realty"
+    description: "Residential, commercial, and retail land and township development firms."
+
+  - id: "sector_infrastructure"
+    name: "Indian Infrastructure & Construction Sector"
+    type: "sector"
+    sector: "infrastructure"
+    ticker: null
+    aliases:
+      - "Infrastructure sector"
+      - "capital goods"
+      - "engineering construction"
+    description: "Civil engineering, construction, and capital goods heavy industrial firms."
+
+  # ---------------- EQUITIES: BANKING ----------------
+  - id: "equity_hdfcbank"
+    name: "HDFC Bank Ltd"
+    type: "equity"
+    sector: "banking"
+    ticker: "HDFCBANK.NS"
+    aliases:
+      - "HDFC Bank"
+      - "HDFC"
+      - "HDFCBANK"
+    description: "Largest private sector bank in India by assets and market capitalization."
+
+  - id: "equity_icicibank"
+    name: "ICICI Bank Ltd"
+    type: "equity"
+    sector: "banking"
+    ticker: "ICICIBANK.NS"
+    aliases:
+      - "ICICI Bank"
+      - "ICICI"
+      - "ICICIBANK"
+    description: "Leading private commercial lender with diversified retail and corporate lending."
+
+  - id: "equity_sbin"
+    name: "State Bank of India"
+    type: "equity"
+    sector: "banking"
+    ticker: "SBIN.NS"
+    aliases:
+      - "SBI"
+      - "State Bank of India"
+      - "SBIN"
+      - "State Bank"
+    description: "Largest public sector bank in India, holding over 20% system loan market share."
+
+  - id: "equity_kotakbank"
+    name: "Kotak Mahindra Bank Ltd"
+    type: "equity"
+    sector: "banking"
+    ticker: "KOTAKBANK.NS"
+    aliases:
+      - "Kotak Mahindra Bank"
+      - "Kotak Bank"
+      - "Kotak"
+      - "KOTAKBANK"
+    description: "Prominent private commercial bank with high CASA ratio and wealth management."
+
+  - id: "equity_axisbank"
+    name: "Axis Bank Ltd"
+    type: "equity"
+    sector: "banking"
+    ticker: "AXISBANK.NS"
+    aliases:
+      - "Axis Bank"
+      - "Axis"
+      - "AXISBANK"
+    description: "Third largest private sector bank in India by branch network and loan assets."
+
+  # ---------------- EQUITIES: AVIATION ----------------
+  - id: "equity_indigo"
+    name: "InterGlobe Aviation Ltd (IndiGo)"
+    type: "equity"
+    sector: "aviation"
+    ticker: "INDIGO.NS"
+    aliases:
+      - "IndiGo"
+      - "InterGlobe Aviation"
+      - "Indigo Airlines"
+      - "INDIGO"
+    description: "Largest passenger airline in India commanding over 60% domestic passenger market share."
+
+  - id: "equity_spicejet"
+    name: "SpiceJet Ltd"
+    type: "equity"
+    sector: "aviation"
+    ticker: "SPICEJET.NS"
+    aliases:
+      - "SpiceJet"
+      - "Spice Jet"
+      - "SPICEJET"
+    description: "Low-cost scheduled passenger carrier operating across domestic and regional routes."
+
+  # ---------------- EQUITIES: PAINTS ----------------
+  - id: "equity_asianpaints"
+    name: "Asian Paints Ltd"
+    type: "equity"
+    sector: "paints"
+    ticker: "ASIANPAINT.NS"
+    aliases:
+      - "Asian Paints"
+      - "Asian Paint"
+      - "ASIANPAINT"
+    description: "India's largest decorative coatings manufacturer with significant raw material sensitivity to crude derivatives."
+
+  - id: "equity_bergerpaints"
+    name: "Berger Paints India Ltd"
+    type: "equity"
+    sector: "paints"
+    ticker: "BERGEPAINT.NS"
+    aliases:
+      - "Berger Paints"
+      - "Berger Paint"
+      - "BERGEPAINT"
+    description: "Second largest decorative and industrial paint manufacturer in India."
+
+  - id: "equity_nerolac"
+    name: "Kansai Nerolac Paints Ltd"
+    type: "equity"
+    sector: "paints"
+    ticker: "KANSAINER.NS"
+    aliases:
+      - "Kansai Nerolac"
+      - "Nerolac"
+      - "KANSAINER"
+    description: "Market leader in Indian automotive and industrial coatings."
+
+  # ---------------- EQUITIES: AUTOMOBILES ----------------
+  - id: "equity_maruti"
+    name: "Maruti Suzuki India Ltd"
+    type: "equity"
+    sector: "automobiles"
+    ticker: "MARUTI.NS"
+    aliases:
+      - "Maruti Suzuki"
+      - "Maruti"
+      - "MARUTI"
+    description: "Market leader in Indian passenger cars with over 40% domestic volume market share."
+
+  - id: "equity_tatamotors"
+    name: "Tata Motors Ltd"
+    type: "equity"
+    sector: "automobiles"
+    ticker: "TATAMOTORS.NS"
+    aliases:
+      - "Tata Motors"
+      - "TaMo"
+      - "TATAMOTORS"
+    description: "Major automotive conglomerate producing commercial vehicles, passenger cars, and JLR luxury vehicles."
+
+  - id: "equity_mandm"
+    name: "Mahindra & Mahindra Ltd"
+    type: "equity"
+    sector: "automobiles"
+    ticker: "M&M.NS"
+    aliases:
+      - "Mahindra & Mahindra"
+      - "M&M"
+      - "Mahindra"
+    description: "Market leader in Indian utility vehicles, SUVs, and agricultural farm equipment."
+
+  - id: "equity_bajajauto"
+    name: "Bajaj Auto Ltd"
+    type: "equity"
+    sector: "automobiles"
+    ticker: "BAJAJ-AUTO.NS"
+    aliases:
+      - "Bajaj Auto"
+      - "Bajaj"
+      - "BAJAJ-AUTO"
+    description: "Major two-wheeler and three-wheeler manufacturer with extensive export markets in Africa and LatAm."
+
+  - id: "equity_heromotoco"
+    name: "Hero MotoCorp Ltd"
+    type: "equity"
+    sector: "automobiles"
+    ticker: "HEROMOTOCO.NS"
+    aliases:
+      - "Hero MotoCorp"
+      - "Hero Honda"
+      - "Hero"
+      - "HEROMOTOCO"
+    description: "World's largest two-wheeler manufacturer by annual unit sales volume, oriented to rural Indian demand."
+
+  # ---------------- EQUITIES: INFORMATION TECHNOLOGY ----------------
+  - id: "equity_tcs"
+    name: "Tata Consultancy Services Ltd"
+    type: "equity"
+    sector: "it"
+    ticker: "TCS.NS"
+    aliases:
+      - "TCS"
+      - "Tata Consultancy Services"
+    description: "India's largest IT exporter and software enterprise services company by revenue and headcount."
+
+  - id: "equity_infosys"
+    name: "Infosys Ltd"
+    type: "equity"
+    sector: "it"
+    ticker: "INFY.NS"
+    aliases:
+      - "Infosys"
+      - "INFY"
+    description: "Global consulting and IT services multinational deriving significant revenues in USD."
+
+  - id: "equity_wipro"
+    name: "Wipro Ltd"
+    type: "equity"
+    sector: "it"
+    ticker: "WIPRO.NS"
+    aliases:
+      - "Wipro"
+      - "WIPRO"
+    description: "Tier-1 Indian information technology consulting and business process services company."
+
+  - id: "equity_hcltech"
+    name: "HCL Technologies Ltd"
+    type: "equity"
+    sector: "it"
+    ticker: "HCLTECH.NS"
+    aliases:
+      - "HCL Tech"
+      - "HCL Technologies"
+      - "HCLTECH"
+    description: "Prominent IT enterprise provider with strength in engineering services and software products."
+
+  - id: "equity_techm"
+    name: "Tech Mahindra Ltd"
+    type: "equity"
+    sector: "it"
+    ticker: "TECHM.NS"
+    aliases:
+      - "Tech Mahindra"
+      - "TechM"
+      - "TECHM"
+    description: "IT services provider focused on telecommunications, networking infrastructure, and enterprise solutions."
+
+  # ---------------- EQUITIES: ENERGY & OIL ----------------
+  - id: "equity_reliance"
+    name: "Reliance Industries Ltd"
+    type: "equity"
+    sector: "energy"
+    ticker: "RELIANCE.NS"
+    aliases:
+      - "Reliance Industries"
+      - "RIL"
+      - "Reliance"
+      - "RELIANCE"
+    description: "Diversified conglomerate with world's largest refining complex at Jamnagar, retail, and telecom."
+
+  - id: "equity_ongc"
+    name: "Oil and Natural Gas Corporation Ltd"
+    type: "equity"
+    sector: "energy"
+    ticker: "ONGC.NS"
+    aliases:
+      - "ONGC"
+      - "Oil and Natural Gas Corporation"
+    description: "India's largest crude oil and natural gas upstream exploration and production state enterprise."
+
+  - id: "equity_bpcl"
+    name: "Bharat Petroleum Corporation Ltd"
+    type: "equity"
+    sector: "energy"
+    ticker: "BPCL.NS"
+    aliases:
+      - "Bharat Petroleum"
+      - "BPCL"
+    description: "State-owned downstream oil marketing company operating retail fuel pumps and refineries."
+
+  - id: "equity_ioc"
+    name: "Indian Oil Corporation Ltd"
+    type: "equity"
+    sector: "energy"
+    ticker: "IOC.NS"
+    aliases:
+      - "Indian Oil"
+      - "IOC"
+      - "Indian Oil Corporation"
+    description: "Leading state-owned downstream oil refiner and marketer dominating retail petroleum dispensing."
+
+  - id: "equity_coalindia"
+    name: "Coal India Ltd"
+    type: "equity"
+    sector: "energy"
+    ticker: "COALINDIA.NS"
+    aliases:
+      - "Coal India"
+      - "CIL"
+      - "COALINDIA"
+    description: "Single largest coal producer in the world supplying domestic thermal power plants."
+
+  # ---------------- EQUITIES: METALS ----------------
+  - id: "equity_tatasteel"
+    name: "Tata Steel Ltd"
+    type: "equity"
+    sector: "metals"
+    ticker: "TATASTEEL.NS"
+    aliases:
+      - "Tata Steel"
+      - "TATASTEEL"
+    description: "Major integrated global steelmaker with massive domestic blast furnace capacity in India."
+
+  - id: "equity_jswsteel"
+    name: "JSW Steel Ltd"
+    type: "equity"
+    sector: "metals"
+    ticker: "JSWSTEEL.NS"
+    aliases:
+      - "JSW Steel"
+      - "JSW"
+      - "JSWSTEEL"
+    description: "India's leading private steel producer operating integrated flats and longs production facilities."
+
+  - id: "equity_hindalco"
+    name: "Hindalco Industries Ltd"
+    type: "equity"
+    sector: "metals"
+    ticker: "HINDALCO.NS"
+    aliases:
+      - "Hindalco"
+      - "Hindalco Industries"
+      - "HINDALCO"
+    description: "Flagship metals company of Aditya Birla Group, global aluminum rolled products maker via Novelis."
+
+  - id: "equity_vedanta"
+    name: "Vedanta Ltd"
+    type: "equity"
+    sector: "metals"
+    ticker: "VEDL.NS"
+    aliases:
+      - "Vedanta"
+      - "VEDL"
+    description: "Diversified natural resources major operating zinc, oil & gas, aluminum, and copper assets."
+
+  # ---------------- EQUITIES: REAL ESTATE ----------------
+  - id: "equity_dlf"
+    name: "DLF Ltd"
+    type: "equity"
+    sector: "real_estate"
+    ticker: "DLF.NS"
+    aliases:
+      - "DLF"
+      - "Delhi Land and Finance"
+    description: "India's largest publicly listed real estate developer with premier NCR residential and commercial assets."
+
+  - id: "equity_godrejprop"
+    name: "Godrej Properties Ltd"
+    type: "equity"
+    sector: "real_estate"
+    ticker: "GODREJPROP.NS"
+    aliases:
+      - "Godrej Properties"
+      - "Godrej Prop"
+      - "GODREJPROP"
+    description: "Leading pan-India residential developer operating across Mumbai, NCR, Bengaluru, and Pune."
+
+  - id: "equity_lodha"
+    name: "Macrotech Developers Ltd (Lodha)"
+    type: "equity"
+    sector: "real_estate"
+    ticker: "LODHA.NS"
+    aliases:
+      - "Lodha"
+      - "Macrotech Developers"
+      - "LODHA"
+    description: "Dominant residential real estate developer in the Mumbai Metropolitan Region (MMR)."
+
+  - id: "equity_oberoi"
+    name: "Oberoi Realty Ltd"
+    type: "equity"
+    sector: "real_estate"
+    ticker: "OBEROIRLTY.NS"
+    aliases:
+      - "Oberoi Realty"
+      - "Oberoi"
+      - "OBEROIRLTY"
+    description: "Premium high-end residential and mixed-use commercial developer in Mumbai."
+
+  # ---------------- EQUITIES: INFRASTRUCTURE & FMCG ----------------
+  - id: "equity_lt"
+    name: "Larsen & Toubro Ltd"
+    type: "equity"
+    sector: "infrastructure"
+    ticker: "LT.NS"
+    aliases:
+      - "Larsen & Toubro"
+      - "L&T"
+      - "LT"
+    description: "India's premier engineering, procurement, and construction conglomerate."
+
+  - id: "equity_ultratech"
+    name: "UltraTech Cement Ltd"
+    type: "equity"
+    sector: "infrastructure"
+    ticker: "ULTRACEMCO.NS"
+    aliases:
+      - "UltraTech Cement"
+      - "UltraTech"
+      - "ULTRACEMCO"
+    description: "Largest cement manufacturer in India with over 140 MTPA manufacturing capacity."
+
+  - id: "equity_hul"
+    name: "Hindustan Unilever Ltd"
+    type: "equity"
+    sector: "fmcg"
+    ticker: "HINDUNILVR.NS"
+    aliases:
+      - "HUL"
+      - "Hindustan Unilever"
+      - "HINDUNILVR"
+    description: "India's largest consumer goods enterprise with nationwide retail reach."
+
+  - id: "equity_itc"
+    name: "ITC Ltd"
+    type: "equity"
+    sector: "fmcg"
+    ticker: "ITC.NS"
+    aliases:
+      - "ITC"
+      - "ITC Limited"
+    description: "Diversified FMCG, paperboards, hotels, and agricultural commodities corporation."
+
+# ----------------------------------------------------------------
+# RELATIONSHIPS (EDGES)
+# ----------------------------------------------------------------
+edges:
+  # Macro Transmission Channels: Crude Oil
+  - source: "macro_brent_crude"
+    target: "sector_paints"
+    sign: "negative"
+    weight: 0.85
+    lag_days: 10
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Crude oil derivatives such as titanium dioxide solvents, mineral turpentine, and phthalic anhydride comprise ~35-40% of paint input cost. Rising crude drives gross margin contraction."
+    evidence_refs:
+      - "Asian Paints Annual Report FY2023-24 (Raw Material Cost Disclosures)"
+      - "Crisil Sector Research: Indian Decorative Paints Outlook"
+
+  - source: "macro_brent_crude"
+    target: "sector_aviation"
+    sign: "negative"
+    weight: 0.90
+    lag_days: 5
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Aviation Turbine Fuel (ATF) constitutes 35% to 45% of total operating expenses for Indian carriers. Unhedged crude price spikes directly squeeze airline EBITDAR."
+    evidence_refs:
+      - "DGCA Monthly Airline Financial Performance Bulletins"
+      - "InterGlobe Aviation FY24 Management Discussion & Analysis"
+
+  - source: "macro_brent_crude"
+    target: "currency_usdinr"
+    sign: "positive"
+    weight: 0.75
+    lag_days: 3
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "India imports over 85% of crude oil needs. Surging crude inflates the oil import bill, widens the Current Account Deficit, and triggers rupee depreciation pressures against the USD."
+    evidence_refs:
+      - "RBI Bulletin: External Sector Dynamics and Petroleum Import Elasticity"
+      - "Ministry of Petroleum & Natural Gas (PPAC) Import Reports"
+
+  - source: "macro_brent_crude"
+    target: "macro_india_cpi"
+    sign: "positive"
+    weight: 0.70
+    lag_days: 20
+    confidence: "medium"
+    provenance: "curated_prior"
+    rationale: "Higher international crude prices pass through directly to transport fuel tariffs and downstream logistics, lifting headline wholesale and consumer price inflation."
+    evidence_refs:
+      - "RBI Working Paper Series: Fuel Price Pass-through into CPI in India"
+
+  - source: "macro_brent_crude"
+    target: "sector_energy"
+    sign: "positive"
+    weight: 0.65
+    lag_days: 2
+    confidence: "medium"
+    provenance: "curated_prior"
+    rationale: "Upstream exploration producers benefit from elevated realized crude barrel selling prices, offsetting potential marketing margin compressions at retail fuel pumps."
+    evidence_refs:
+      - "ONGC Quarterly Realization Disclosures"
+
+  - source: "macro_brent_crude"
+    target: "equity_asianpaints"
+    sign: "negative"
+    weight: 0.85
+    lag_days: 10
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Direct cost shock: raw material price sensitivity to crude monomers compresses Asian Paints operating margin profile."
+    evidence_refs:
+      - "Asian Paints Investor Presentation FY24"
+
+  - source: "macro_brent_crude"
+    target: "equity_indigo"
+    sign: "negative"
+    weight: 0.90
+    lag_days: 5
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Direct cost shock: ATF jet fuel repricing directly inflates IndiGo CASM (cost per available seat kilometer)."
+    evidence_refs:
+      - "IndiGo FY24 Earnings Conference Call Transcripts"
+
+  - source: "macro_brent_crude"
+    target: "equity_ongc"
+    sign: "positive"
+    weight: 0.80
+    lag_days: 2
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Upstream producer ONGC earns revenues benchmarked to gross Brent realization per barrel (net of statutory windfall levies)."
+    evidence_refs:
+      - "ONGC Annual Financial Disclosures FY24"
+
+  - source: "macro_brent_crude"
+    target: "equity_reliance"
+    sign: "ambiguous"
+    weight: 0.50
+    lag_days: 5
+    confidence: "medium"
+    provenance: "curated_prior"
+    rationale: "Contested channel: High crude lifts gross refining margins (GRMs) on diesel and jet fuel exports, but simultaneously inflates naphtha and downstream petrochemical feedstock costs."
+    evidence_refs:
+      - "Reliance Industries Annual Report (Oil-to-Chemicals Segment Performance)"
+
+  - source: "macro_brent_crude"
+    target: "equity_bpcl"
+    sign: "negative"
+    weight: 0.75
+    lag_days: 5
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "OMC marketing margin squeeze: state-directed retail petrol and diesel pricing caps prevent immediate domestic pump price increases when crude spikes."
+    evidence_refs:
+      - "BPCL Quarterly Financial Disclosures (Gross Under-recoveries)"
+
+  # Macro Transmission: Inflation & RBI Policy
+  - source: "macro_india_cpi"
+    target: "macro_rbi_repo_rate"
+    sign: "positive"
+    weight: 0.85
+    lag_days: 30
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Under the statutory inflation-targeting framework, RBI's Monetary Policy Committee responds to sustained retail inflation over 4% with policy repo rate hikes."
+    evidence_refs:
+      - "Reserve Bank of India Act, 1934 (Monetary Policy Framework)"
+      - "RBI Monetary Policy Committee Resolution Records"
+
+  - source: "macro_rbi_repo_rate"
+    target: "macro_india_10y_yield"
+    sign: "positive"
+    weight: 0.80
+    lag_days: 2
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Policy rate hikes lift short-term money market rates and sovereign term structure, pushing up 10-year benchmark government bond yields."
+    evidence_refs:
+      - "CCIL Bond Market Review: Policy Rate Transmission to G-Sec Curve"
+
+  - source: "macro_rbi_repo_rate"
+    target: "sector_banking"
+    sign: "positive"
+    weight: 0.60
+    lag_days: 15
+    confidence: "medium"
+    provenance: "curated_prior"
+    rationale: "Floating-rate loans (EBLR linked) reprice immediately upward while term deposit costs reprice with a lag, creating transient Net Interest Margin (NIM) expansion."
+    evidence_refs:
+      - "RBI Report on Trend and Progress of Banking in India"
+
+  - source: "macro_rbi_repo_rate"
+    target: "sector_real_estate"
+    sign: "negative"
+    weight: 0.80
+    lag_days: 45
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Repo rate hikes transmit into floating home loan rates, increasing monthly EMI payments, impairing homebuyer affordability, and cooling residential presales velocity."
+    evidence_refs:
+      - "Knight Frank India Real Estate Residential Affordability Index"
+      - "Anarock Research Housing Market Reports"
+
+  - source: "macro_rbi_repo_rate"
+    target: "sector_automobiles"
+    sign: "negative"
+    weight: 0.65
+    lag_days: 30
+    confidence: "medium"
+    provenance: "curated_prior"
+    rationale: "Over 75% of passenger vehicles and 90% of commercial vehicles in India are financed; elevated auto loan interest rates dampen retail retail demand."
+    evidence_refs:
+      - "SIAM Industry Financial Review: Vehicle Retail Finance Penetration"
+
+  - source: "macro_india_10y_yield"
+    target: "index_nifty_50"
+    sign: "negative"
+    weight: 0.60
+    lag_days: 5
+    confidence: "medium"
+    provenance: "curated_prior"
+    rationale: "Higher risk-free benchmark yields elevate the equity hurdle rate and equity cost of capital (WACC), compressing market-wide price-to-earnings valuation multiples."
+    evidence_refs:
+      - "NSE Equity Valuation Indices & Historical Yield Gap Studies"
+
+  # Macro Transmission: Currency USD/INR
+  - source: "currency_usdinr"
+    target: "sector_it"
+    sign: "positive"
+    weight: 0.85
+    lag_days: 15
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Indian IT firms bill customers in USD/EUR while incurring approximately 65% of operating costs in INR; rupee depreciation directly yields operating margin expansion."
+    evidence_refs:
+      - "Nasscom Annual Strategic Review: Foreign Currency Realizations"
+      - "TCS & Infosys FX Hedging Disclosures"
+
+  - source: "currency_usdinr"
+    target: "equity_tcs"
+    sign: "positive"
+    weight: 0.80
+    lag_days: 15
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "A 100 bps rupee depreciation against the dollar typically improves TCS EBIT margin by ~30-35 basis points before hedging offsets."
+    evidence_refs:
+      - "TCS Investor Presentations (Quarterly Currency Sensitivity Tables)"
+
+  - source: "currency_usdinr"
+    target: "equity_infosys"
+    sign: "positive"
+    weight: 0.80
+    lag_days: 15
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Infosys derives ~85% of consolidated revenues from export markets; currency tailwinds support rupee profitability."
+    evidence_refs:
+      - "Infosys Annual Financial Statement FY24 (FX Sensitivity Note)"
+
+  - source: "currency_usdinr"
+    target: "sector_aviation"
+    sign: "negative"
+    weight: 0.70
+    lag_days: 10
+    confidence: "medium"
+    provenance: "curated_prior"
+    rationale: "Aircraft lease rentals, foreign airport navigation fees, and engine maintenance overseas are dollar-denominated, increasing rupee cash outflows."
+    evidence_refs:
+      - "IndiGo Annual Report FY24 (Foreign Currency Risk Management)"
+
+  - source: "currency_usdinr"
+    target: "sector_metals"
+    sign: "positive"
+    weight: 0.65
+    lag_days: 10
+    confidence: "medium"
+    provenance: "curated_prior"
+    rationale: "Domestic metal landed prices are benchmarked to import parity; a weaker rupee lifts landed import costs, giving domestic steel and aluminum makers room to raise local prices."
+    evidence_refs:
+      - "Ministry of Steel: Domestic Pricing and Import Parity Formulation"
+
+  # Sector Interlinkages & Cost Pass-Through
+  - source: "sector_metals"
+    target: "sector_automobiles"
+    sign: "negative"
+    weight: 0.70
+    lag_days: 30
+    confidence: "medium"
+    provenance: "curated_prior"
+    rationale: "Steel and aluminum sheet materials constitute ~55-60% of auto raw material consumption; rising metal quotes increase vehicle production bills."
+    evidence_refs:
+      - "Maruti Suzuki Annual Reports (Raw Material Price Elasticity)"
+
+  # Sector to Equity Links: Paints
+  - source: "sector_paints"
+    target: "equity_asianpaints"
+    sign: "positive"
+    weight: 0.90
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Dominant player in decorative paints directly tracking sector margin health."
+    evidence_refs: ["BSE Equity Filings"]
+
+  - source: "sector_paints"
+    target: "equity_bergerpaints"
+    sign: "positive"
+    weight: 0.85
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Second-largest paint firm directly mirroring paint sector trends."
+    evidence_refs: ["BSE Equity Filings"]
+
+  - source: "sector_paints"
+    target: "equity_nerolac"
+    sign: "positive"
+    weight: 0.80
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Key automotive coatings manufacturer exposed to industrial and decorative paint trends."
+    evidence_refs: ["BSE Equity Filings"]
+
+  # Sector to Equity Links: Aviation
+  - source: "sector_aviation"
+    target: "equity_indigo"
+    sign: "positive"
+    weight: 0.95
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "IndiGo represents over 60% of Indian passenger market share; sector fortunes determine equity performance."
+    evidence_refs: ["DGCA Carrier Statistics"]
+
+  - source: "sector_aviation"
+    target: "equity_spicejet"
+    sign: "positive"
+    weight: 0.75
+    lag_days: 0
+    confidence: "medium"
+    provenance: "curated_prior"
+    rationale: "Secondary low-cost carrier with high financial leverage to sector fuel and load trends."
+    evidence_refs: ["DGCA Carrier Statistics"]
+
+  # Sector to Equity Links: Banking
+  - source: "sector_banking"
+    target: "equity_hdfcbank"
+    sign: "positive"
+    weight: 0.90
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Largest private lender directly reflecting credit growth and system asset quality."
+    evidence_refs: ["RBI Bank Supervision Data"]
+
+  - source: "sector_banking"
+    target: "equity_icicibank"
+    sign: "positive"
+    weight: 0.90
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Leading commercial bank with strong correlation to systemic loan growth."
+    evidence_refs: ["RBI Bank Supervision Data"]
+
+  - source: "sector_banking"
+    target: "equity_sbin"
+    sign: "positive"
+    weight: 0.88
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "State Bank of India moves in close lockstep with systemic macroeconomic and credit conditions."
+    evidence_refs: ["RBI Bank Supervision Data"]
+
+  - source: "sector_banking"
+    target: "equity_kotakbank"
+    sign: "positive"
+    weight: 0.85
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "High-tier private bank tracking commercial lending and wealth management."
+    evidence_refs: ["RBI Bank Supervision Data"]
+
+  - source: "sector_banking"
+    target: "equity_axisbank"
+    sign: "positive"
+    weight: 0.85
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Large private lender tracking retail and wholesale asset expansion."
+    evidence_refs: ["RBI Bank Supervision Data"]
+
+  # Sector to Equity Links: Automobiles
+  - source: "sector_automobiles"
+    target: "equity_maruti"
+    sign: "positive"
+    weight: 0.90
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Leader in passenger vehicle volumes directly reflecting automobile demand cycle."
+    evidence_refs: ["SIAM Monthly Dispatches"]
+
+  - source: "sector_automobiles"
+    target: "equity_tatamotors"
+    sign: "positive"
+    weight: 0.85
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Commercial and EV automaker strongly exposed to domestic automobile industry."
+    evidence_refs: ["SIAM Monthly Dispatches"]
+
+  - source: "sector_automobiles"
+    target: "equity_mandm"
+    sign: "positive"
+    weight: 0.85
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "SUV and farm tractor manufacturer leveraged to auto cycle."
+    evidence_refs: ["SIAM Monthly Dispatches"]
+
+  - source: "sector_automobiles"
+    target: "equity_bajajauto"
+    sign: "positive"
+    weight: 0.80
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Two-wheeler major mirroring auto sector sentiment."
+    evidence_refs: ["SIAM Monthly Dispatches"]
+
+  - source: "sector_automobiles"
+    target: "equity_heromotoco"
+    sign: "positive"
+    weight: 0.80
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Mass market two-wheeler maker tied to auto consumption."
+    evidence_refs: ["SIAM Monthly Dispatches"]
+
+  # Sector to Equity Links: IT
+  - source: "sector_it"
+    target: "equity_tcs"
+    sign: "positive"
+    weight: 0.92
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Anchor constituent of Indian IT sector."
+    evidence_refs: ["Nasscom Industry Reports"]
+
+  - source: "sector_it"
+    target: "equity_infosys"
+    sign: "positive"
+    weight: 0.90
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Core tier-1 software services provider."
+    evidence_refs: ["Nasscom Industry Reports"]
+
+  - source: "sector_it"
+    target: "equity_wipro"
+    sign: "positive"
+    weight: 0.82
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Major software enterprise services exporter."
+    evidence_refs: ["Nasscom Industry Reports"]
+
+  - source: "sector_it"
+    target: "equity_hcltech"
+    sign: "positive"
+    weight: 0.84
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Prominent IT enterprise and engineering services firm."
+    evidence_refs: ["Nasscom Industry Reports"]
+
+  - source: "sector_it"
+    target: "equity_techm"
+    sign: "positive"
+    weight: 0.80
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Telecom-focused IT services major."
+    evidence_refs: ["Nasscom Industry Reports"]
+
+  # Sector to Equity Links: Energy
+  - source: "sector_energy"
+    target: "equity_reliance"
+    sign: "positive"
+    weight: 0.85
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Dominant refining and petrochemical operator."
+    evidence_refs: ["PPAC Oil Dispatches"]
+
+  - source: "sector_energy"
+    target: "equity_ongc"
+    sign: "positive"
+    weight: 0.88
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Flagship upstream oil and gas producer."
+    evidence_refs: ["PPAC Oil Dispatches"]
+
+  - source: "sector_energy"
+    target: "equity_bpcl"
+    sign: "positive"
+    weight: 0.80
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Downstream fuel marketing and refining company."
+    evidence_refs: ["PPAC Oil Dispatches"]
+
+  - source: "sector_energy"
+    target: "equity_ioc"
+    sign: "positive"
+    weight: 0.80
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Downstream oil refining and fuel retailer."
+    evidence_refs: ["PPAC Oil Dispatches"]
+
+  # Sector to Equity Links: Metals
+  - source: "sector_metals"
+    target: "equity_tatasteel"
+    sign: "positive"
+    weight: 0.90
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Integrated blast-furnace steel producer tracking sector pricing."
+    evidence_refs: ["Joint Plant Committee Steel Data"]
+
+  - source: "sector_metals"
+    target: "equity_jswsteel"
+    sign: "positive"
+    weight: 0.90
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Primary flat steelmaker tracking sector spreads."
+    evidence_refs: ["Joint Plant Committee Steel Data"]
+
+  - source: "sector_metals"
+    target: "equity_hindalco"
+    sign: "positive"
+    weight: 0.85
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Global aluminum and domestic copper producer tracking metal quotes."
+    evidence_refs: ["London Metal Exchange Benchmark Reports"]
+
+  - source: "sector_metals"
+    target: "equity_vedanta"
+    sign: "positive"
+    weight: 0.82
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Diversified natural resources firm exposed to base metal pricing."
+    evidence_refs: ["BSE Filings"]
+
+  # Sector to Equity Links: Real Estate
+  - source: "sector_real_estate"
+    target: "equity_dlf"
+    sign: "positive"
+    weight: 0.88
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Largest developer in India reflecting commercial and residential demand."
+    evidence_refs: ["PropEquity Market Statistics"]
+
+  - source: "sector_real_estate"
+    target: "equity_godrejprop"
+    sign: "positive"
+    weight: 0.86
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Leading national residential developer."
+    evidence_refs: ["Anarock Real Estate Reports"]
+
+  - source: "sector_real_estate"
+    target: "equity_lodha"
+    sign: "positive"
+    weight: 0.84
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "MMR residential real estate developer."
+    evidence_refs: ["PropEquity Market Statistics"]
+
+  - source: "sector_real_estate"
+    target: "equity_oberoi"
+    sign: "positive"
+    weight: 0.82
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "High-end residential real estate developer in Mumbai."
+    evidence_refs: ["PropEquity Market Statistics"]
+
+  # Sector to Equity Links: Infrastructure & FMCG
+  - source: "sector_infrastructure"
+    target: "equity_lt"
+    sign: "positive"
+    weight: 0.90
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Premier engineering and EPC conglomerate."
+    evidence_refs: ["Ministry of Statistics & Programme Implementation"]
+
+  - source: "sector_infrastructure"
+    target: "equity_ultratech"
+    sign: "positive"
+    weight: 0.88
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Leading cement maker exposed to building construction volume."
+    evidence_refs: ["Cement Manufacturers Association"]
+
+  # Sector to Market Indices Links
+  - source: "sector_banking"
+    target: "index_nifty_bank"
+    sign: "positive"
+    weight: 0.95
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Nifty Bank directly mirrors the composite performance of its constituent commercial lenders."
+    evidence_refs: ["NSE Indices White Paper"]
+
+  - source: "sector_it"
+    target: "index_nifty_it"
+    sign: "positive"
+    weight: 0.95
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Nifty IT tracks the composite performance of top Indian software exporters."
+    evidence_refs: ["NSE Indices White Paper"]
+
+  - source: "sector_automobiles"
+    target: "index_nifty_auto"
+    sign: "positive"
+    weight: 0.95
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Nifty Auto tracks the aggregate movement of automotive OEMs."
+    evidence_refs: ["NSE Indices White Paper"]
+
+  - source: "sector_metals"
+    target: "index_nifty_metal"
+    sign: "positive"
+    weight: 0.95
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Nifty Metal represents the consolidated market performance of primary metal producers."
+    evidence_refs: ["NSE Indices White Paper"]
+
+  - source: "sector_real_estate"
+    target: "index_nifty_realty"
+    sign: "positive"
+    weight: 0.95
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Nifty Realty represents listed commercial and residential property developers."
+    evidence_refs: ["NSE Indices White Paper"]
+
+  - source: "index_nifty_bank"
+    target: "index_nifty_50"
+    sign: "positive"
+    weight: 0.85
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Financial services and banking stocks constitute over 30% of total Nifty 50 index weight."
+    evidence_refs: ["NSE Index Methodology - Nifty 50 Factsheet"]
+
+  - source: "index_nifty_it"
+    target: "index_nifty_50"
+    sign: "positive"
+    weight: 0.70
+    lag_days: 0
+    confidence: "high"
+    provenance: "curated_prior"
+    rationale: "Information technology stocks account for approximately 13-15% of Nifty 50 index weight."
+    evidence_refs: ["NSE Index Methodology - Nifty 50 Factsheet"]

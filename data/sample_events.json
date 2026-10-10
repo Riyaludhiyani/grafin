@@ -1,0 +1,220 @@
+[
+  {
+    "id": "event_crude_oil_spike_2024",
+    "title": "Brent crude surges 8% to $92/bbl following geopolitical tensions in the Middle East",
+    "body": "Global crude oil prices witnessed a sudden and sharp spike today as Brent crude rallied over 8% to touch $92.50 per barrel following escalated conflict in the Middle East and renewed OPEC+ output curbs. In Indian domestic trade, the sharp surge in crude oil ignited margin worries across petroleum-sensitive manufacturing sectors. Equities of decorative coatings makers tumbled, with Asian Paints sliding over 3.8% as analysts flagged elevated raw material feedstock costs. Aviation carriers also faced heavy selling pressure, with InterGlobe Aviation (IndiGo) falling 3.1% on concerns of immediate Aviation Turbine Fuel price hikes. Conversely, state-run upstream explorer ONGC gained 4.2% on expectations of higher gross crude realizations. Downstream oil marketing company BPCL traded lower on fears of retail marketing margin compression. Economists cautioned that sustained crude above $90 would exert downward pressure on the Indian Rupee against the US Dollar.",
+    "source_label": "Illustrative Synthetic Case (Financial Wire Prototype)",
+    "publication_date": "2024-04-15T09:30:00Z",
+    "source_type": "synthetic_case",
+    "claim_status": "illustrative_synthetic",
+    "cached_extraction": {
+      "event_id": "event_crude_oil_spike_2024",
+      "event_type": "commodity_shock",
+      "status": "observed",
+      "direction": "positive",
+      "magnitude": "severe",
+      "magnitude_numeric": 8.0,
+      "magnitude_unit": "%",
+      "geography": "Global/India",
+      "timestamp": "2024-04-15T09:30:00Z",
+      "source": "Financial Wire Prototype / Illustrative Synthetic Case",
+      "primary_entity_id": "macro_brent_crude",
+      "primary_entity_name": "Brent Crude Oil",
+      "mentioned_entities": [
+        {"text": "Brent crude", "resolved_node_id": "macro_brent_crude", "entity_type": "commodity"},
+        {"text": "crude oil", "resolved_node_id": "macro_brent_crude", "entity_type": "commodity"},
+        {"text": "Asian Paints", "resolved_node_id": "equity_asianpaints", "entity_type": "equity"},
+        {"text": "InterGlobe Aviation", "resolved_node_id": "equity_indigo", "entity_type": "equity"},
+        {"text": "ONGC", "resolved_node_id": "equity_ongc", "entity_type": "equity"},
+        {"text": "BPCL", "resolved_node_id": "equity_bpcl", "entity_type": "equity"},
+        {"text": "Indian Rupee", "resolved_node_id": "currency_usdinr", "entity_type": "currency"}
+      ],
+      "evidence_snippets": [
+        "Brent crude rallied over 8% to touch $92.50 per barrel following escalated conflict in the Middle East and renewed OPEC+ output curbs.",
+        "Equities of decorative coatings makers tumbled, with Asian Paints sliding over 3.8% as analysts flagged elevated raw material feedstock costs.",
+        "Aviation carriers also faced heavy selling pressure, with InterGlobe Aviation (IndiGo) falling 3.1% on concerns of immediate Aviation Turbine Fuel price hikes.",
+        "Conversely, state-run upstream explorer ONGC gained 4.2% on expectations of higher gross crude realizations."
+      ]
+    }
+  },
+  {
+    "id": "event_rbi_repo_rate_hike_50bps",
+    "title": "RBI Monetary Policy Committee raises repo rate by 50 bps to 6.50% to anchor inflation expectations",
+    "body": "The Reserve Bank of India (RBI) Monetary Policy Committee (MPC) voted unanimously to increase the policy repo rate by 50 basis points to 6.50% with immediate effect. Governor Shaktikanta Das noted that while systemic resilience remains strong, persistent retail inflation pressures mandate decisive monetary action. Indian sovereign bond yields jumped following the announcement, with the benchmark 10-year G-sec yield rising 9 basis points to 7.34%. In equity markets, the rate hike generated divergent sector movements. The Nifty Bank index saw volatile trading, with bellwether lenders HDFC Bank and State Bank of India advancing as loan book floating benchmark yields reprice upwards. Conversely, rate-sensitive interest sectors faced sharp headwinds: real estate major DLF fell 2.4% on expectations of higher mortgage EMI rates slowing residential pre-sales, while automobile manufacturer Maruti Suzuki slipped 1.8% on auto financing rate concerns.",
+    "source_label": "RBI Press Release / Verified Historical Public Record",
+    "publication_date": "2023-02-08T10:00:00Z",
+    "source_type": "verified_regulatory",
+    "claim_status": "verified_historical",
+    "cached_extraction": {
+      "event_id": "event_rbi_repo_rate_hike_50bps",
+      "event_type": "monetary_policy",
+      "status": "observed",
+      "direction": "positive",
+      "magnitude": "moderate",
+      "magnitude_numeric": 50.0,
+      "magnitude_unit": "bps",
+      "geography": "India",
+      "timestamp": "2023-02-08T10:00:00Z",
+      "source": "RBI Monetary Policy Committee Statement / Verified Historical Record",
+      "primary_entity_id": "macro_rbi_repo_rate",
+      "primary_entity_name": "RBI Repo Rate",
+      "mentioned_entities": [
+        {"text": "repo rate", "resolved_node_id": "macro_rbi_repo_rate", "entity_type": "macro_indicator"},
+        {"text": "retail inflation", "resolved_node_id": "macro_india_cpi", "entity_type": "macro_indicator"},
+        {"text": "10-year G-sec yield", "resolved_node_id": "macro_india_10y_yield", "entity_type": "macro_indicator"},
+        {"text": "Nifty Bank", "resolved_node_id": "index_nifty_bank", "entity_type": "market_index"},
+        {"text": "HDFC Bank", "resolved_node_id": "equity_hdfcbank", "entity_type": "equity"},
+        {"text": "State Bank of India", "resolved_node_id": "equity_sbin", "entity_type": "equity"},
+        {"text": "DLF", "resolved_node_id": "equity_dlf", "entity_type": "equity"},
+        {"text": "Maruti Suzuki", "resolved_node_id": "equity_maruti", "entity_type": "equity"}
+      ],
+      "evidence_snippets": [
+        "The Reserve Bank of India (RBI) Monetary Policy Committee (MPC) voted unanimously to increase the policy repo rate by 50 basis points to 6.50% with immediate effect.",
+        "The benchmark 10-year G-sec yield rising 9 basis points to 7.34%.",
+        "Bellwether lenders HDFC Bank and State Bank of India advancing as loan book floating benchmark yields reprice upwards.",
+        "Real estate major DLF fell 2.4% on expectations of higher mortgage EMI rates slowing residential pre-sales."
+      ]
+    }
+  },
+  {
+    "id": "event_rupee_depreciation_record_low",
+    "title": "Indian Rupee slides to fresh all-time low of 83.75 per USD amid foreign portfolio outflows",
+    "body": "The Indian Rupee depreciated by 38 paise to breach a historic low of 83.75 against the US Dollar in interbank foreign exchange trade today. Broad strength in the US Dollar index combined with aggressive foreign institutional investor selling in domestic equities triggered the currency sell-off. Currency weakness spurred sharp divergence in sector performance on Dalal Street. The Nifty IT index rallied 2.2% as large-cap software enterprise exporters benefit from dollar realizations; Tata Consultancy Services (TCS) and Infosys rose 2.5% and 2.1% respectively. In contrast, domestic airlines suffered as foreign lease rentals and fuel costs surged in rupee terms, pulling InterGlobe Aviation lower. Importers and capital goods firms also traded in the red.",
+    "source_label": "Financial Wire Prototype / Illustrative Synthetic Case",
+    "publication_date": "2024-07-22T11:15:00Z",
+    "source_type": "synthetic_case",
+    "claim_status": "illustrative_synthetic",
+    "cached_extraction": {
+      "event_id": "event_rupee_depreciation_record_low",
+      "event_type": "currency_depreciation",
+      "status": "observed",
+      "direction": "positive",
+      "magnitude": "moderate",
+      "magnitude_numeric": 38.0,
+      "magnitude_unit": "paise",
+      "geography": "India",
+      "timestamp": "2024-07-22T11:15:00Z",
+      "source": "Financial Wire Prototype / Illustrative Synthetic Case",
+      "primary_entity_id": "currency_usdinr",
+      "primary_entity_name": "USD/INR Exchange Rate",
+      "mentioned_entities": [
+        {"text": "Indian Rupee", "resolved_node_id": "currency_usdinr", "entity_type": "currency"},
+        {"text": "USD", "resolved_node_id": "currency_usdinr", "entity_type": "currency"},
+        {"text": "Nifty IT", "resolved_node_id": "index_nifty_it", "entity_type": "market_index"},
+        {"text": "Tata Consultancy Services", "resolved_node_id": "equity_tcs", "entity_type": "equity"},
+        {"text": "Infosys", "resolved_node_id": "equity_infosys", "entity_type": "equity"},
+        {"text": "InterGlobe Aviation", "resolved_node_id": "equity_indigo", "entity_type": "equity"}
+      ],
+      "evidence_snippets": [
+        "The Indian Rupee depreciated by 38 paise to breach a historic low of 83.75 against the US Dollar in interbank foreign exchange trade today.",
+        "The Nifty IT index rallied 2.2% as large-cap software enterprise exporters benefit from dollar realizations; Tata Consultancy Services (TCS) and Infosys rose 2.5% and 2.1% respectively.",
+        "In contrast, domestic airlines suffered as foreign lease rentals and fuel costs surged in rupee terms, pulling InterGlobe Aviation lower."
+      ]
+    }
+  },
+  {
+    "id": "event_monsoon_food_cpi_inflation_spike",
+    "title": "India July retail inflation surges to 7.44% on food price shock and uneven monsoon distribution",
+    "body": "India's headline Consumer Price Index (CPI) inflation breached the Reserve Bank of India's upper tolerance band to print at a 15-month high of 7.44% in July, driven by a sharp 11.5% jump in the Consumer Food Price Index. Erratic monsoon rainfall in key vegetable, pulse, and cereal cultivating belts created severe supply dislocations. Analysts noted that the inflation spike dampens expectations of any early policy rate easing by the central bank and raises the likelihood of liquidity tightening measures. Fast-moving consumer goods majors Hindustan Unilever (HUL) and ITC saw cautious trading as volume growth in rural markets faces pressure from food price inflation. Fixed income yields hardened across the curve as traders priced in prolonged higher policy rates.",
+    "source_label": "Ministry of Statistics (MoSPI) / Verified Historical Record",
+    "publication_date": "2023-08-14T17:30:00Z",
+    "source_type": "verified_regulatory",
+    "claim_status": "verified_historical",
+    "cached_extraction": {
+      "event_id": "event_monsoon_food_cpi_inflation_spike",
+      "event_type": "inflation_surge",
+      "status": "observed",
+      "direction": "positive",
+      "magnitude": "severe",
+      "magnitude_numeric": 7.44,
+      "magnitude_unit": "%",
+      "geography": "India",
+      "timestamp": "2023-08-14T17:30:00Z",
+      "source": "MoSPI Headline CPI Release / Verified Historical Record",
+      "primary_entity_id": "macro_india_cpi",
+      "primary_entity_name": "India CPI Inflation",
+      "mentioned_entities": [
+        {"text": "CPI inflation", "resolved_node_id": "macro_india_cpi", "entity_type": "macro_indicator"},
+        {"text": "retail inflation", "resolved_node_id": "macro_india_cpi", "entity_type": "macro_indicator"},
+        {"text": "policy rate", "resolved_node_id": "macro_rbi_repo_rate", "entity_type": "macro_indicator"},
+        {"text": "Hindustan Unilever", "resolved_node_id": "equity_hul", "entity_type": "equity"},
+        {"text": "ITC", "resolved_node_id": "equity_itc", "entity_type": "equity"}
+      ],
+      "evidence_snippets": [
+        "India's headline Consumer Price Index (CPI) inflation breached the Reserve Bank of India's upper tolerance band to print at a 15-month high of 7.44% in July.",
+        "Analysts noted that the inflation spike dampens expectations of any early policy rate easing by the central bank and raises the likelihood of liquidity tightening measures.",
+        "Fast-moving consumer goods majors Hindustan Unilever (HUL) and ITC saw cautious trading as volume growth in rural markets faces pressure from food price inflation."
+      ]
+    }
+  },
+  {
+    "id": "event_rbi_unsecured_loan_risk_weight_tightening",
+    "title": "RBI hikes risk weights on bank unsecured loans and NBFC credit by 25 percentage points",
+    "body": "In a preemptive macroprudential tightening measure, the Reserve Bank of India raised regulatory risk weights on unsecured consumer credit, personal loans, and credit card receivables by 25 percentage points to 125% for commercial banks and NBFCs. The central bank highlighted ballooning growth in high-risk unsecured borrowing segments. The mandate forces lenders to allocate higher Tier-1 regulatory capital against unsecured portfolios, effectively dampening capital adequacy buffers by approximately 40 to 90 basis points. Private banking heavyweights ICICI Bank, Axis Bank, and Kotak Mahindra Bank saw immediate equity sell-offs of between 1.5% and 3.0%, dragging the Nifty Bank index down 1.4%. Credit rating agencies noted that the regulation will temper loan volume expansion in retail personal financing while preserving systemic solvency.",
+    "source_label": "RBI Notification / Verified Historical Record",
+    "publication_date": "2023-11-16T18:00:00Z",
+    "source_type": "verified_regulatory",
+    "claim_status": "verified_historical",
+    "cached_extraction": {
+      "event_id": "event_rbi_unsecured_loan_risk_weight_tightening",
+      "event_type": "regulatory_mandate",
+      "status": "observed",
+      "direction": "negative",
+      "magnitude": "moderate",
+      "magnitude_numeric": 25.0,
+      "magnitude_unit": "%",
+      "geography": "India",
+      "timestamp": "2023-11-16T18:00:00Z",
+      "source": "RBI Regulatory Notification on Consumer Credit / Verified Historical Record",
+      "primary_entity_id": "sector_banking",
+      "primary_entity_name": "Indian Banking Sector",
+      "mentioned_entities": [
+        {"text": "commercial banks", "resolved_node_id": "sector_banking", "entity_type": "sector"},
+        {"text": "ICICI Bank", "resolved_node_id": "equity_icicibank", "entity_type": "equity"},
+        {"text": "Axis Bank", "resolved_node_id": "equity_axisbank", "entity_type": "equity"},
+        {"text": "Kotak Mahindra Bank", "resolved_node_id": "equity_kotakbank", "entity_type": "equity"},
+        {"text": "Nifty Bank", "resolved_node_id": "index_nifty_bank", "entity_type": "market_index"}
+      ],
+      "evidence_snippets": [
+        "The Reserve Bank of India raised regulatory risk weights on unsecured consumer credit, personal loans, and credit card receivables by 25 percentage points to 125% for commercial banks and NBFCs.",
+        "The mandate forces lenders to allocate higher Tier-1 regulatory capital against unsecured portfolios, effectively dampening capital adequacy buffers by approximately 40 to 90 basis points.",
+        "Private banking heavyweights ICICI Bank, Axis Bank, and Kotak Mahindra Bank saw immediate equity sell-offs of between 1.5% and 3.0%, dragging the Nifty Bank index down 1.4%."
+      ]
+    }
+  },
+  {
+    "id": "event_us_fed_hawkish_fii_equity_outflow",
+    "title": "US Treasury 10-year yields top 4.80% after hawkish Fed guidance, triggering FII equity sell-off in India",
+    "body": "A hawkish policy posture by the US Federal Reserve signaled that benchmark interest rates would remain 'higher for longer', propelling the US 10-year Treasury yield to fresh multi-year peaks above 4.80%. The spike in global risk-free rates sparked widespread capital rotation out of emerging markets. Foreign Institutional Investors (FIIs) net sold over Rs 3,400 crore ($410 million) of Indian equities in a single trading session, causing India's 10-year sovereign benchmark yield to firm up 6 basis points. The headline Nifty 50 index dropped 1.6%, weighed down by heavy index heavyweights Reliance Industries, HDFC Bank, and TCS. Market strategists noted that while domestic institutional mutual fund inflows provide structural downside support, high foreign yields constrain equity price-to-earnings expansion in the near term.",
+    "source_label": "Illustrative Synthetic Case (Global Macro Prototype)",
+    "publication_date": "2024-05-02T16:00:00Z",
+    "source_type": "synthetic_case",
+    "claim_status": "illustrative_synthetic",
+    "cached_extraction": {
+      "event_id": "event_us_fed_hawkish_fii_equity_outflow",
+      "event_type": "capital_flows",
+      "status": "observed",
+      "direction": "positive",
+      "magnitude": "moderate",
+      "magnitude_numeric": 6.0,
+      "magnitude_unit": "bps",
+      "geography": "Global/India",
+      "timestamp": "2024-05-02T16:00:00Z",
+      "source": "Global Macro Prototype / Illustrative Synthetic Case",
+      "primary_entity_id": "macro_india_10y_yield",
+      "primary_entity_name": "India 10-Year Benchmark Bond Yield",
+      "mentioned_entities": [
+        {"text": "10-year sovereign benchmark yield", "resolved_node_id": "macro_india_10y_yield", "entity_type": "macro_indicator"},
+        {"text": "Nifty 50", "resolved_node_id": "index_nifty_50", "entity_type": "market_index"},
+        {"text": "Reliance Industries", "resolved_node_id": "equity_reliance", "entity_type": "equity"},
+        {"text": "HDFC Bank", "resolved_node_id": "equity_hdfcbank", "entity_type": "equity"},
+        {"text": "TCS", "resolved_node_id": "equity_tcs", "entity_type": "equity"}
+      ],
+      "evidence_snippets": [
+        "A hawkish policy posture by the US Federal Reserve signaled that benchmark interest rates would remain 'higher for longer', propelling the US 10-year Treasury yield to fresh multi-year peaks above 4.80%.",
+        "Foreign Institutional Investors (FIIs) net sold over Rs 3,400 crore ($410 million) of Indian equities in a single trading session, causing India's 10-year sovereign benchmark yield to firm up 6 basis points.",
+        "The headline Nifty 50 index dropped 1.6%, weighed down by heavy index heavyweights Reliance Industries, HDFC Bank, and TCS."
+      ]
+    }
+  }
+]
